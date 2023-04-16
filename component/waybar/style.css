@@ -82,6 +82,7 @@ window#waybar {
   padding: 0.25rem 0.75rem;
   margin: 1px 6px;
   border-radius: 20px;
+  font-weight: 900;
 }
 
 /* -----------------------------------------------------------------------------
@@ -95,12 +96,16 @@ window#waybar {
 
 #custom-weather {
   color: #ff4499;
+
+  font-weight: 900;
 }
 
 #battery {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+
+  font-weight: 900;
 }
 
 #battery.warning {
