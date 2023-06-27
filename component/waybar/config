@@ -22,6 +22,9 @@
     "modules-right": [
         "tray",
         // "idle_inhibitor",
+        "custom/wallpaper_changer",
+
+        "custom/wallpaper_changer_gruv",
         "clock",
         "cpu",
         // "custom/keyboard-layout",
@@ -35,6 +38,27 @@
     ],
 
     // Modules
+
+    "custom/wallpaper_changer":{
+        "on-click":"~/.config/hypr/scripts/change_wallpaper.sh",
+	"interval": "once",
+
+            "format":"{icon}",
+            "format-icons":"󰸉"
+
+
+        },
+    "custom/wallpaper_changer_gruv":{
+        "on-click":"~/.config/hypr/scripts/change_gruv_wall.sh",
+	"interval": "once",
+
+            "format":"{icon}",
+            "format-icons":""
+
+
+        },
+
+
 
     "idle_inhibitor": {
         "format": "{icon} ",
@@ -77,7 +101,7 @@
             "warning": 70,
             "critical": 90,
         },
-        "on-click": "kitty -e 'btm'",
+        "on-click": "kitty -e bpytop",
     },
 
     "custom/keyboard-layout": {
@@ -133,11 +157,19 @@
         "format": "  {icon}  ",
         //"format":"{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "󰙯",
-            "4": "",
+            "1":"",
+            "2":"",
+            "3":"",
+            "4":"󰙯",
+            "5":"",
+            "6":"",
+            "7":"",
+            "8":"󰒱",
+            "9":"",
+
+
         }
+
     },
 
     "pulseaudio": {

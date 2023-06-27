@@ -46,17 +46,17 @@ Arc-Dark Color Scheme
   min-height: 0;
   margin: 1px;
   padding: 0;
-  color: #66aced;
+  color: #fabd2f;
 }
 
 /* The whole bar */
 window#waybar {
-  color: #dfdfdf;
+  color: #fb4934;
   /* background-color: rgba(0,0,0,0.8); */
   /* background-color: rgba(8,0,37,0.85); */
   background-color: rgba(0, 10, 0, 0);
   font-family: JetBrains Mono Nerd Font;
-  font-size: 14px;
+  font-size: 18px;
   /* border-radius: 22px; */
 }
 
@@ -90,7 +90,7 @@ window#waybar {
  * -------------------------------------------------------------------------- */
 
 #clock {
-  color: #ff4499;
+  color: #fe8019;
   /* color: white; */
 }
 
@@ -127,7 +127,7 @@ window#waybar {
 }
 
 #cpu {
-  color: #f7768e;
+  color: #d3869b;
 }
 
 #cpu.warning {
@@ -142,7 +142,7 @@ window#waybar {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: #f7768e;
+  color: #d3869b;
 }
 
 #memory.warning {
@@ -171,7 +171,7 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: #bb9af7;
+  color: #8ec07c;
   border-left: 0px;
   border-right: 0px;
   margin-right: 0;
@@ -200,7 +200,7 @@ window#waybar {
 
 #window {
   font-weight: bold;
-  color: #f7768e;
+  color: #b8bb26;
 }
 
 #custom-media {
@@ -216,7 +216,6 @@ window#waybar {
 #workspaces button {
   border-bottom: 3px solid transparent;
   margin-bottom: 0px;
-  color: #dfdfdf;
 }
 
 #workspaces button.active {
@@ -244,4 +243,20 @@ window#waybar {
 #backlight.icon {
   padding-right: 1px;
   font-size: 13px;
+}
+
+#custom-wallpaper_changer {
+  font-size: 20px;
+  color: #fabd2f;
+}
+
+#custom-wallpaper_changer_gruv {
+  font-size: 20px;
+  margin-left: 10px;
+
+  color: #fabd2f;
+}
+
+#custom-wallpaper_changer:hover {
+  color: red;
 }
