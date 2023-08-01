@@ -47,6 +47,7 @@ Arc-Dark Color Scheme
   margin: 1px;
   font-family: "Vector-mono";
   padding: 0;
+
   color: #fabd2f;
 }
 
@@ -58,6 +59,7 @@ window#waybar {
   background-color: rgba(0, 10, 0, 0);
   font-family: JetBrains Mono Nerd Font;
   font-size: 18px;
+
   /* border-radius: 22px; */
 }
 
@@ -82,7 +84,7 @@ window#waybar {
 #custom-PBPbattery {
   padding: 0.25rem 0.75rem;
   margin: 1px 6px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-weight: 900;
 }
 
@@ -91,12 +93,13 @@ window#waybar {
  * -------------------------------------------------------------------------- */
 
 #clock {
-  color: #fe8019;
+  color: #c4a7e7;
+  /* From https://css.glass */
   /* color: white; */
 }
 
 #custom-weather {
-  color: #ff4499;
+  color: #c4a7e7;
 
   font-weight: 900;
 }
@@ -105,16 +108,39 @@ window#waybar {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  color: #c4a7e7;
 
   font-weight: 900;
 }
 
+.modules-left {
+  background: rgba(0, 0, 0, 0.69);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.modules-center {
+  background: rgba(0, 0, 0, 0.69);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modules-right {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.69);
+  color: #c4a7e7;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 #battery.warning {
-  color: orange;
+  color: #ebbcba;
 }
 
 #battery.critical {
-  color: red;
+  color: #6e6a86;
 }
 
 #battery.warning.discharging {
@@ -128,7 +154,7 @@ window#waybar {
 }
 
 #cpu {
-  color: #d3869b;
+  color: #c4a7e7;
 }
 
 #cpu.warning {
@@ -143,7 +169,7 @@ window#waybar {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: #d3869b;
+  color: #c4a7e7;
 }
 
 #memory.warning {
@@ -162,17 +188,20 @@ window#waybar {
   /* background: @highlight; */
   /* background: #dfdfdf; */
   border-bottom: 3px transparent;
-  color: #ff4499;
+  color: #c4a7e7;
   margin-left: 5px;
   padding: 7px;
 }
 
+#network.connected {
+  color: #c4a7e7;
+}
 #network.disconnected {
-  color: orange;
+  color: #c4a7e7;
 }
 
 #pulseaudio {
-  color: #8ec07c;
+  color: #c4a7e7;
   border-left: 0px;
   border-right: 0px;
   margin-right: 0;
@@ -201,27 +230,30 @@ window#waybar {
 
 #window {
   font-weight: bold;
-  color: #b8bb26;
+  color: #f6c177;
 }
 
 #custom-media {
-  color: #bb9af7;
+  color: #f6c177;
 }
 
 #workspaces {
   font-size: 16px;
 
-  border-radius: 20px;
+  color: #c4a7e7;
 }
 
 #workspaces button {
   border-bottom: 3px solid transparent;
   margin-bottom: 0px;
+
+  color: #c4a7e7;
 }
 
 #workspaces button.active {
   border-bottom: 1px solid #ff4499;
   margin-bottom: 1px;
+  color: #c4a7e7;
   padding-left: 0;
 }
 
@@ -248,14 +280,13 @@ window#waybar {
 
 #custom-wallpaper_changer {
   font-size: 20px;
-  color: #fabd2f;
+  color: #c4a7e7;
 }
 
 #custom-wallpaper_changer_gruv {
   font-size: 20px;
   margin-left: 10px;
-
-  color: #fabd2f;
+  color: #c4a7e7;
 }
 
 #custom-wallpaper_changer:hover {
