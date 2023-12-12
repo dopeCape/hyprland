@@ -47,16 +47,18 @@ Arc-Dark Color Scheme
   margin: 1px;
   font-family: "Vector-mono";
   padding: 0;
-
   color: #fabd2f;
 }
 
 /* The whole bar */
 window#waybar {
   color: #fb4934;
+  background: rgb(31, 29, 46);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
   /* background-color: rgba(0,0,0,0.8); */
   /* background-color: rgba(8,0,37,0.85); */
-  background-color: rgba(0, 10, 0, 0);
   font-family: JetBrains Mono Nerd Font;
   font-size: 18px;
 
@@ -100,7 +102,6 @@ window#waybar {
 
 #custom-weather {
   color: #c4a7e7;
-
   font-weight: 900;
 }
 
@@ -109,30 +110,7 @@ window#waybar {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   color: #c4a7e7;
-
   font-weight: 900;
-}
-
-.modules-left {
-  background: rgba(0, 0, 0, 0.69);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.modules-center {
-  background: rgba(0, 0, 0, 0.69);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.modules-right {
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.69);
-  color: #c4a7e7;
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #battery.warning {
@@ -193,7 +171,7 @@ window#waybar {
   padding: 7px;
 }
 
-#network.connected {
+#network {
   color: #c4a7e7;
 }
 #network.disconnected {
@@ -230,7 +208,7 @@ window#waybar {
 
 #window {
   font-weight: bold;
-  color: #f6c177;
+  color: #c4a7e7;
 }
 
 #custom-media {
@@ -239,14 +217,12 @@ window#waybar {
 
 #workspaces {
   font-size: 16px;
-
   color: #c4a7e7;
 }
 
 #workspaces button {
   border-bottom: 3px solid transparent;
   margin-bottom: 0px;
-
   color: #c4a7e7;
 }
 

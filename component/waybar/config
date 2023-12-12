@@ -2,19 +2,17 @@
 {
     "layer": "top",
     "position": "top",
-    "margin" : 5,
-
-
+    "margin-left" : 15,
+    "margin-right" : 15,
+    "margin-top" : 10,
+    "margin-bottom" : 5,
     // If height property would be not present, it'd be calculated dynamically
     "height": 30,
-
     "modules-left": [
         // "custom/launcher",
-        "wlr/workspaces",
         "custom/media",
         "hyprland/window",
     ],
- 
     "modules-center": [
 "memory",
     ],
@@ -33,7 +31,7 @@
         // "backlight#icon",
         // "backlight#value",
         "pulseaudio",
-    "pulseaudio#microphone",
+       "pulseaudio#microphone",
         "network",
     ],
 
@@ -91,7 +89,7 @@
         "interval": 10,
         // "format-alt": " {:%e %b %Y}", // Icon: calendar-alt
         "format": "{:%e %b %Y %H:%M} ",
-        "tooltip-format": "{:%e %B %Y}"
+        "tooltip-format": "{:%e %B %Y}",
     },
 
     "cpu": {
@@ -124,7 +122,6 @@
             "critical": 90
         }
     },
-
     "network": {
         "interval": 5,
         "format-wifi": " ", // Icon: wifi
@@ -155,7 +152,6 @@
         "disable-markup" : false,
         "all-outputs": true,
         "format": "  {icon}  ",
-        //"format":"{icon}",
         "format-icons": {
             "1":"",
             "2":"",
@@ -166,8 +162,6 @@
             "7":"",
             "8":"󰒱",
             "9":"",
-
-
         }
 
     },
